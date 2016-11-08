@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cfW-Ka-t9D">
+                                <rect key="frame" x="60" y="110" width="480" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Ytx-t3-ssr"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o3G-zR-fYy">
+                                <rect key="frame" x="60" y="200" width="480" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="HLr-b5-fEk"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="crJ-rX-WoX">
+                                <rect key="frame" x="60" y="290" width="480" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="FZu-4P-8f6"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eh-hp-N0M">
+                                <rect key="frame" x="233" y="420" width="60" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="dL2-mc-odV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nVi-a5-Qej"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="0.49811422413793105" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="crJ-rX-WoX" firstAttribute="trailing" secondItem="o3G-zR-fYy" secondAttribute="trailing" id="BY3-3W-dJk"/>
+                            <constraint firstItem="o3G-zR-fYy" firstAttribute="trailing" secondItem="cfW-Ka-t9D" secondAttribute="trailing" id="E9K-Zo-b9j"/>
+                            <constraint firstItem="crJ-rX-WoX" firstAttribute="top" secondItem="o3G-zR-fYy" secondAttribute="bottom" constant="60" id="H7I-Fp-MCk"/>
+                            <constraint firstItem="o3G-zR-fYy" firstAttribute="top" secondItem="cfW-Ka-t9D" secondAttribute="bottom" constant="60" id="NGg-Zu-ZhT"/>
+                            <constraint firstItem="o3G-zR-fYy" firstAttribute="leading" secondItem="cfW-Ka-t9D" secondAttribute="leading" id="Tv2-5F-spk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cfW-Ka-t9D" secondAttribute="trailing" constant="40" id="X1x-c1-hM6"/>
+                            <constraint firstItem="crJ-rX-WoX" firstAttribute="top" secondItem="o3G-zR-fYy" secondAttribute="bottom" constant="116" id="Y9P-WA-2Kr"/>
+                            <constraint firstItem="0eh-hp-N0M" firstAttribute="top" secondItem="crJ-rX-WoX" secondAttribute="bottom" constant="100" id="dfx-5b-nds"/>
+                            <constraint firstItem="cfW-Ka-t9D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="hmW-RQ-6t0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0eh-hp-N0M" secondAttribute="trailing" constant="287" id="s8v-Ct-DaG"/>
+                            <constraint firstItem="crJ-rX-WoX" firstAttribute="leading" secondItem="o3G-zR-fYy" secondAttribute="leading" id="uC1-Jd-GE5"/>
+                            <constraint firstItem="cfW-Ka-t9D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="vDL-aB-g6Y"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Y9P-WA-2Kr"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="productCompany" destination="o3G-zR-fYy" id="QSw-L5-Np4"/>
+                        <outlet property="productName" destination="cfW-Ka-t9D" id="u7D-on-NMf"/>
+                        <outlet property="productPrice" destination="crJ-rX-WoX" id="Xxp-hf-yrI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
